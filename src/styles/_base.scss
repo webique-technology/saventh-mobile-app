@@ -1,7 +1,57 @@
-body{
-  font-family: var(--sav-font);
-  background: var(--sav-bg);
-  color: var(--sav-text);
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  font-family: "Inter", sans-serif;
 }
 
-a{ text-decoration:none; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+}
+
+.lato {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+// font sizes
+.main-title {
+  font-size: $heading-primary;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.main-title-secondary {
+  font-size: $heading-second;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.text-para,
+p {
+  font-size: $text-para;
+  line-height: 20px;
+}
+
+.text-base {
+  font-size: $text-base;
+  line-height: 18px;
+}
+
+.text-sm {
+  font-size: $text-sm;
+  line-height: 16px;
+}
+
+.text-xs {
+  font-size: $text-xs;
+  line-height: 14px;
+}

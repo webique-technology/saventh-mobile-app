@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import AppInput from "../../components/common/AppInput";
-import AppButton from "../../components/common/AppButton";
+// import AppButton from "../../components/common/AppButton";
 
 export default function SignIn() {
   const navigate = useNavigate();
@@ -41,9 +41,9 @@ export default function SignIn() {
           </Link>
         </div>
 
-        <AppButton type="submit" className="w-100 mt-3">
+        {/* <AppButton type="submit" className="w-100 mt-3">
           Sign In
-        </AppButton>
+        </AppButton> */}
       </form>
 
       <div className="sav-bottom-text mt-4">

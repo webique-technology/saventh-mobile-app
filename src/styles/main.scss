@@ -2,3 +2,75 @@
 @import "./base";
 @import "./auth";
 @import "./components";
+
+
+.primary-color {
+    color: $primary;
+}
+
+.primary-text-color {
+    color: $primary-text;
+}
+
+.accent {
+    background-color: var(--sav-gradient-accent);
+}
+.primary-linear {
+    background-color: var(--sav-gradient-primary);
+}
+
+.purple {
+    background-color: var(--sav-gradient-purple);
+}
+
+.teal-mint {
+    background-color: var(--sav-gradient-teal-mint);
+}
+
+
+// primary btn
+.button-class {
+    width: 100%;
+    padding: 11px;
+    font-family: var(--sav-font);
+    font-weight: 600;
+    border-radius: 16px; // Enforces perfect pill architecture shape
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+}
+
+.primary-btn {
+    background-color: $primary;
+    color: $light;
+    border-color: $primary;
+
+    &:hover,
+    &:focus {
+        background-color: $primary-light; // Darkened fallback fallback transition
+        border-color: $primary;
+        color: $light;
+    }
+}
+
+.secondary-btn {
+    color: $primary;
+    background-color: $light;
+    border-color: $primary;
+
+    &:hover,
+    &:focus {
+        color: $light;
+        background-color: $primary; // Darkened fallback fallback transition
+    }
+
+}
