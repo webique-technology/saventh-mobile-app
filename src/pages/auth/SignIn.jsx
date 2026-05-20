@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import AppInput from "../../components/common/AppInput";
+import { PrimaryBtn } from "../../components/common/AppButton";
 // import AppButton from "../../components/common/AppButton";
 
 export default function SignIn() {
@@ -40,10 +41,10 @@ export default function SignIn() {
             Forgot Password?
           </Link>
         </div>
-
-        {/* <AppButton type="submit" className="w-100 mt-3">
-          Sign In
-        </AppButton> */}
+        <PrimaryBtn
+          className="primary-btn"
+          text={"Sign In"}
+        />
       </form>
 
       <div className="sav-bottom-text mt-4">

@@ -8,6 +8,10 @@ import CreateAccount from "../pages/onboarding/CreateAccount";
 import VerifyOtp from "../pages/onboarding/VerifyOtp";
 import PanVerification from "../pages/onboarding/PanVerification";
 import PersonalDetails from "../pages/onboarding/PersonalDetails";
+import PersonalAddress from "../pages/onboarding/PersonalAddress";
+import PersonalNominees from "../pages/onboarding/PersonalNomeenies";
+import PersonalBank from "../pages/onboarding/PersonalBank";
+import PersonalSetupDone from "../pages/onboarding/PersonalSetupDone";
 import AddressDetails from "../pages/onboarding/AddressDetails";
 import BankDetails from "../pages/onboarding/BankDetails";
 import Done from "../pages/onboarding/Done";
@@ -31,6 +35,10 @@ export default function AppRoutes() {
         <Route path="/verify-otp" element={<VerifyOtp />} />
         <Route path="/pan-verification" element={<PanVerification />} />
         <Route path="/personal-details" element={<PersonalDetails />} />
+        <Route path="/personal-address" element={<PersonalAddress />} />
+        <Route path="/personal-nominees" element={<PersonalNominees />} />
+        <Route path="/personal-bank" element={<PersonalBank />} />
+        <Route path="/personal-setup-done" element={<PersonalSetupDone />} />
         <Route path="/address-details" element={<AddressDetails />} />
         <Route path="/bank-details" element={<BankDetails />} />
         <Route path="/done" element={<Done />} />

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { PrimaryBtn } from "../../components/common/AppButton";
 // import AppButton from "../../components/common/AppButton";
 
 export default function Done() {
@@ -14,7 +15,10 @@ export default function Done() {
       </p>
 
       <Link to="/dashboard">
-        {/* <AppButton className="w-100 mt-4">Go to Dashboard</AppButton> */}
+        <PrimaryBtn
+          className="primary-btn"
+          text={"Go to Dashboard"}
+        />
       </Link>
 
       <div className="sav-bottom-text mt-4">

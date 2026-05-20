@@ -41,6 +41,12 @@ p {
   line-height: 20px;
 }
 
+.text-title{
+  font-size: $text-title;
+  line-height: 28px;
+  font-weight: 600;
+}
+
 .text-base {
   font-size: $text-base;
   line-height: 18px;
@@ -54,4 +60,10 @@ p {
 .text-xs {
   font-size: $text-xs;
   line-height: 14px;
+}
+
+.text-logo {
+  font-size: $text-medium;
+  line-height: 36px;
+  font-weight: 600;
 }
