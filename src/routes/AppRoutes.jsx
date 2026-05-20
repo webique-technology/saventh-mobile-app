@@ -11,7 +11,7 @@ import PersonalDetails from "../pages/onboarding/PersonalDetails";
 import AddressDetails from "../pages/onboarding/AddressDetails";
 import BankDetails from "../pages/onboarding/BankDetails";
 import Done from "../pages/onboarding/Done";
-
+import SignInnumber from "../pages/auth/sign-in-number";
 import SignIn from "../pages/auth/SignIn";
 import ForgotPassword from "../pages/auth/ForgotPassword";
 import ResetPassword from "../pages/auth/ResetPassword";
@@ -37,6 +37,7 @@ export default function AppRoutes() {
 
         {/* Auth */}
         <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sign-in-number" element={<SignInnumber />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/reset-password" element={<ResetPassword />} />
       </Route>

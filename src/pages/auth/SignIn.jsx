@@ -1,54 +1,88 @@
-import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import AppInput from "../../components/common/AppInput";
-import AppButton from "../../components/common/AppButton";
+import React from "react";
+import { Container } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+import lgo from "../../images/seventh-lgo.svg"
+import basket from "../../images/basket.svg"
+import goal from "../../images/goal.svg"
+import learn from "../../images/learn.svg"
+
+import sebi from "../../images/sebi.svg"
 
 export default function SignIn() {
   const navigate = useNavigate();
-  const [form, setForm] = useState({ mobile: "", password: "" });
-
-  const update = (k, v) => setForm((p) => ({ ...p, [k]: v }));
-
-  const submit = (e) => {
-    e.preventDefault();
-    navigate("/dashboard");
-  };
 
   return (
-    <div className="sav-page">
-      <h2 className="sav-page__title">Sign In</h2>
-      <p className="sav-page__desc">Welcome back, login to continue</p>
-
-      <form onSubmit={submit}>
-        <AppInput
-          label="Mobile Number"
-          placeholder="Enter mobile number"
-          value={form.mobile}
-          onChange={(e) => update("mobile", e.target.value.replace(/\D/g, "").slice(0, 10))}
-        />
-
-        <AppInput
-          label="Password"
-          type="password"
-          placeholder="Enter password"
-          value={form.password}
-          onChange={(e) => update("password", e.target.value)}
-        />
-
-        <div className="d-flex justify-content-end">
-          <Link className="sav-link" to="/forgot-password">
-            Forgot Password?
-          </Link>
+    <div className="saventh-auth-page">
+      <Container>
+        {/* Logo */}
+        <div className="saventh-logo">
+          <div className="logo-box">
+            <span className="logo-text"><img src={lgo} alt="logo-seventh"/></span>
+          </div>
         </div>
 
-        <AppButton type="submit" className="w-100 mt-3">
-          Sign In
-        </AppButton>
-      </form>
+        {/* Heading */}
+        <h1 className="title lato-bold">
+          Welcome back to <span>Saventh</span>
+        </h1>
+        <p className="subtitle">Your personal wealth advisor is waiting.</p>
 
-      <div className="sav-bottom-text mt-4">
-        Don&apos;t have an account? <Link to="/create-account">Create Account</Link>
-      </div>
+        {/* Features */}
+        <div className="features">
+          <div className="feature-item">
+            <div className="icon orange"><img src={basket} alt="basket"/></div>
+            <div>
+              <h4 className="lato-bold">Advisor-curated baskets</h4>
+              <p>Your Saventh advisor handpicks funds for your exact goals</p>
+            </div>
+          </div>
+
+          <div className="feature-item">
+            <div className="icon green"><img src={goal} alt="goal"/></div>
+            <div>
+              <h4 className="lato-bold">Goal-based investing</h4>
+              <p>Link every rupee to a real life goal — retirement, home, education</p>
+            </div>
+          </div>
+
+          <div className="feature-item">
+            <div className="icon mint"><img src={sebi} alt="sebi"/></div>
+            <div>
+              <h4 className="lato-bold">SEBI regulated</h4>
+              <p>All investments via BSE Star MF 2.0. Bank-grade security.</p>
+            </div>
+          </div>
+
+          <div className="feature-item">
+            <div className="icon purple"><img src={learn} alt="learn"/></div>
+            <div>
+              <h4 className="lato-bold">Learn & earn</h4>
+              <p>Bite-sized financial lessons that make you a smarter investor</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Button */}
+        <button
+          className="primary-btn"
+          onClick={() => navigate("/sign-in-number")}
+        >
+          Sign In <span className="arrow">➜</span>
+        </button>
+
+        {/* Create account */}
+        <p className="create-account">
+          New to Saventh?{" "}
+          <span onClick={() => navigate("/create-account")}>Create account</span>
+        </p>
+
+        {/* Footer badges */}
+        <div className="footer-badges">
+          <div className="badge-item">🛡️ SEBI Registered</div>
+          <div className="badge-item">🛡️ BSE Star MF</div>
+          <div className="badge-item">🔒 256-bit SSL</div>
+        </div>
+      </Container>
     </div>
   );
 }

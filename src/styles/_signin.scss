@@ -1,0 +1,167 @@
+.saventh-auth-page {
+  min-height: 100vh;
+  background: $white-col;
+  display: flex;
+  justify-content: center;
+}
+
+.saventh-auth-container {
+  max-width: 420px;
+  padding: 32px 22px;
+}
+
+.logo-wrap{ gap:12px;
+
+  h1{font-size: 24px; color: $logo-text; line-height: 36px;}
+}
+.sav-page__title{margin: 24px 0 16px;
+    font-size: 30px;
+    line-height: 36px;}
+.saventh-logo {
+  margin-top: 10px;
+  margin-bottom: 18px;
+
+  .logo-box {
+    width: 58px;
+    height: 58px;
+    border-radius: 16px;
+    background: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-text {
+    color: #19d3a6;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 14px;
+  color: $title-col;
+
+  span {
+    color: $title-span;
+  }
+}
+
+.subtitle {
+  font-size: 16px;
+  color: $subtitle;
+  margin-bottom: 26px;
+  font-family: "Inter", sans-serif;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.features {
+  margin-bottom: 140px;
+
+  .feature-item {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 24px;
+
+    h4 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0;
+      color: #0b1f17;
+      line-height: 16px;
+    }
+
+    p {
+      margin: 6px 0 0 0;
+      font-size: 12px;
+      color: $subtitle;
+      line-height: 1.4;
+    }
+  }
+
+  .icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .orange {
+    background: #ffe9c8;
+    color: #f28b00;
+  }
+
+  .green {
+    background: #dff8ef;
+    color: #0d6b4f;
+  }
+
+  .mint {
+    background: #d7fff0;
+    color: #0d6b4f;
+  }
+
+  .purple {
+    background: #ece6ff;
+    color: #6a4dff;
+  }
+}
+
+.primary-btn {
+  width: 100%;
+  background: #0d6b4f;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  height: 54px;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0px 6px 18px rgba(13, 107, 79, 0.22);
+
+  .arrow {
+    font-size: 18px;
+  }
+}
+
+.create-account {
+  margin-top: 14px;
+  font-size: 14px;
+  text-align: center;
+  color: #5e7b71;
+
+  span {
+    color: #0d6b4f;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.footer-badges {
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #7a948a;
+  gap: 10px;
+
+  .badge-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+  }
+}
