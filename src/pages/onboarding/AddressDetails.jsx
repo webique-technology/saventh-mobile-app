@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AppInput from "../../components/common/AppInput";
+import { PrimaryBtn } from "../../components/common/AppButton";
 // import AppButton from "../../components/common/AppButton";
 
 export default function AddressDetails() {
@@ -49,7 +50,10 @@ export default function AddressDetails() {
           value={form.pincode}
           onChange={(e) => update("pincode", e.target.value.replace(/\D/g, "").slice(0, 6))}
         />
-
+        <PrimaryBtn
+          className="primary-btn"
+          text={"Continue"}
+        />
         {/* <AppButton type="submit" className="w-100 mt-3">
           Continue
         </AppButton> */}

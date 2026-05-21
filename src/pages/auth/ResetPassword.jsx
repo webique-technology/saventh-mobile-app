@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AppInput from "../../components/common/AppInput";
+import { PrimaryBtn } from "../../components/common/AppButton";
 // import AppButton from "../../components/common/AppButton";
 
 export default function ResetPassword() {
@@ -36,9 +37,10 @@ export default function ResetPassword() {
           onChange={(e) => update("confirm", e.target.value)}
         />
 
-        {/* <AppButton type="submit" className="w-100 mt-3">
-          Update Password
-        </AppButton> */}
+        <PrimaryBtn
+          className="primary-btn"
+          text={"Update Password"}
+        />
       </form>
     </div>
   );

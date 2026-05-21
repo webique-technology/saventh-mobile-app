@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AppInput from "../../components/common/AppInput";
+import { PrimaryBtn } from "../../components/common/AppButton";
 // import AppButton from "../../components/common/AppButton";
 
 export default function BankDetails() {
@@ -48,10 +49,10 @@ export default function BankDetails() {
             update("ifsc", e.target.value.toUpperCase().replace(/[^A-Z0-9]/g, "").slice(0, 11))
           }
         />
-
-        {/* <AppButton type="submit" className="w-100 mt-3">
-          Finish
-        </AppButton> */}
+        <PrimaryBtn
+          className="primary-btn"
+          text={"Finish"}
+        />
       </form>
     </div>
   );

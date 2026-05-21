@@ -3,6 +3,7 @@ import { useState } from "react";
 import StepProgress from "../../components/common/StepProgress";
 // import AppButton from "../../components/common/AppButton";
 import OtpInput from "../../components/common/OtpInput";
+import { PrimaryBtn } from "../../components/common/AppButton";
 
 export default function VerifyOtp() {
   const navigate = useNavigate();
@@ -29,13 +30,12 @@ export default function VerifyOtp() {
         <OtpInput value={otp} onChange={setOtp} />
       </div>
 
-      {/* <AppButton className="w-100 mt-4" onClick={submit}>
-        Verify & Continue
-      </AppButton> */}
+      <PrimaryBtn
+        className="primary-btn mt-3"
+        text={"Continue"}
+        arrowRight={true}
+      />
 
-      <button className="sav-link-btn mt-3" type="button">
-        Resend OTP
-      </button>
     </div>
   );
 }
