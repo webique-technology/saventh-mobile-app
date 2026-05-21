@@ -6,7 +6,11 @@
   --sav-muted: #6c7383;
   --sav-border: #e7ebf3;
   --sav-primary: #116E52;
-  --sav-primary-dark: #109a64;
+  --sav-primary-dark: #0c7c51;
+  --sav-gradient-accent: linear-gradient(90deg, #FFB200 0%, #FF9100 100%);
+  --sav-gradient-primary: linear-gradient(90deg, #097F5D 0%, #00C186 100%);
+  --sav-gradient-purple: linear-gradient(90deg, #8E84FF 0%, #B67DFF 100%);
+  --sav-gradient-teal-mint: linear-gradient(90deg, #00D7B1 0%, #00DD81 100%);
   --sav-radius: 18px;
   --sav-shadow: 0 12px 40px rgba(16, 24, 40, 0.08);
   --sav-font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
@@ -20,10 +24,21 @@
 
 
 $primary: #116E52;
-$primary-dark: #116E52;
+$primary-dark: #0f6148;
+$primary-light: #15946e;
+$note-text:#4B8B77;
+$note-background:#DAEAE559;
+$primary-text: #527A70;
 $light: #ffffff;
-$logo-text:#737373;
-$white-col:#ffffff;
-$title-col:#1A2815;
-$title-span:#116E52;
-$subtitle:#527A70;
+$dark: #000;
+$dark-gray:#1A2815;
+$gray:#737373;
+
+
+$heading-primary: 36px;
+$heading-second: 30px;
+$text-medium: 24px;
+$text-para: 16px;
+$text-base: 14px;
+$text-sm: 12px;
+$text-xs: 10px;

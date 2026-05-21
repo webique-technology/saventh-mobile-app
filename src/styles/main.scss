@@ -5,63 +5,78 @@
 @import "./signin";
 
 
-.lato-thin {
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+.primary-color {
+    color: $primary;
 }
 
-.lato-light {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+.primary-text-color {
+    color: $primary-text;
 }
 
-.lato-regular {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.accent {
+    background-color: var(--sav-gradient-accent);
+}
+.primary-linear {
+    background-color: var(--sav-gradient-primary);
 }
 
-.lato-bold {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+.purple {
+    background-color: var(--sav-gradient-purple);
 }
 
-.lato-black {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-style: normal;
+.teal-mint {
+    background-color: var(--sav-gradient-teal-mint);
 }
 
-.lato-thin-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
-  font-style: italic;
+
+// primary btn
+.button-class {
+    width: 100%;
+    padding: 11px;
+    font-family: var(--sav-font);
+    font-weight: 600;
+    border-radius: 16px; // Enforces perfect pill architecture shape
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    &:active {
+        transform: scale(0.98);
+    }
+
 }
 
-.lato-light-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-style: italic;
+.primary-btn {
+    background-color: $primary;
+    color: $light;
+    border-color: $primary;
+
+    &:hover,
+    &:focus {
+        background-color: $primary-light; // Darkened fallback fallback transition
+        border-color: $primary;
+        color: $light;
+    }
 }
 
-.lato-regular-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: italic;
+.secondary-btn {
+    color: $primary;
+    background-color: $light;
+    border-color: $primary;
+
+    &:hover,
+    &:focus {
+        color: $light;
+        background-color: $primary; // Darkened fallback fallback transition
+    }
+
 }
 
-.lato-bold-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-style: italic;
+.tagline{padding: 8px; border-radius:8px; font-size: 12px; margin: 0 0 140px;
+     background: $note-background; display: flex; align-items: center;
+    p{font-size: 12px; margin: 0; color: $note-text;}
 }
-
-.lato-black-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-

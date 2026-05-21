@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import StepProgress from "../../components/common/StepProgress";
 import AppInput from "../../components/common/AppInput";
-import AppButton from "../../components/common/AppButton";
+// import AppButton from "../../components/common/AppButton";
 
 export default function PersonalDetails() {
   const navigate = useNavigate();
@@ -48,9 +48,9 @@ export default function PersonalDetails() {
           onChange={(e) => update("dob", e.target.value)}
         />
 
-        <AppButton type="submit" className="w-100 mt-3">
+        {/* <AppButton type="submit" className="w-100 mt-3">
           Continue
-        </AppButton>
+        </AppButton> */}
       </form>
     </div>
   );

@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import StepProgress from "../../components/common/StepProgress";
-import AppButton from "../../components/common/AppButton";
+// import AppButton from "../../components/common/AppButton";
 import OtpInput from "../../components/common/OtpInput";
 
 export default function VerifyOtp() {
@@ -29,9 +29,9 @@ export default function VerifyOtp() {
         <OtpInput value={otp} onChange={setOtp} />
       </div>
 
-      <AppButton className="w-100 mt-4" onClick={submit}>
+      {/* <AppButton className="w-100 mt-4" onClick={submit}>
         Verify & Continue
-      </AppButton>
+      </AppButton> */}
 
       <button className="sav-link-btn mt-3" type="button">
         Resend OTP
